@@ -1,0 +1,49 @@
+components:
+  schemas:
+    findBook:
+      properties:
+        book_id:
+          type: integer
+          description: 도서 고유 id
+        isbn:
+          type: string
+          description: 도서 일련 번호
+        title:
+          type: string
+          description: 도서 제목
+        auth_id:
+          type: integer
+          description: 작가 고유 id
+
+    addBook:
+      properties:
+        isbn:
+          type: string
+          description: 도서 일련 번호
+        title:
+          type: string
+          description: 도서 제목
+        auth_id:
+          type: integer
+          description: 작가 고유 id
+
+    updateBook:
+      properties:
+        book_id:
+          type: integer
+          description: 수정할 도서의 고유 id
+        isbn:
+          type: string
+          description: 수정하고자 하는 도서 일련 번호
+        title:
+          type: string
+          description: 수정하고자 하는 도서 제목
+        auth_id:
+          type: integer
+          description: 수정하고자 하는 작가 고유 id
+
+    deleteBook:
+      properties:
+        book_id:
+          type: integer
+          description: 삭제할 도서의 고유 id

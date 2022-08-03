@@ -1,0 +1,22 @@
+components:
+  schemas:
+    findAuthor:
+      properties:
+        author_id:
+          type: integer
+          description: 작가 고유 id
+        first_name:
+          type: string
+          description: 작가 성씨
+        last_name:
+          type: string
+          description: 작가 이름
+
+    addAuthor:
+      properties:
+        first_name:
+          type: string
+          description: 작가 성씨
+        last_name:
+          type: string
+          description: 작가 이름
